@@ -1,0 +1,61 @@
+.marketing-kit
+    background-color: #f2f2f2
+    .container
+        padding-top: 123px
+        padding-bottom: 20px
+        .contentKit
+            display: flex
+            align-items: center
+            .kitText
+                flex-basis: 50%
+                .titleContent
+                    &::before
+                        left: -17px
+                        top: -7px
+                        content: ""
+                        position: absolute
+                        width: 10px
+                        height: 39px
+                        background-color: #fc635e
+                
+        .down 
+            margin-top: 63px
+            background-color: transparent
+            i 
+                color: $text-color
+        img.kit-img
+@media screen and ( max-width: 963px )
+    .marketing-kit
+        .container
+            .contentKit
+                .kit-img
+                    width: 50%
+@media screen and ( max-width: 785px )
+    .marketing-kit
+        .container
+            .contentKit
+                flex-wrap: wrap
+                .kitText
+                    flex-basis: 100%
+                    a.details
+                        display: block
+                        width: 175px
+                        margin: 0 auto
+                        padding: 9px 32px
+                .kit-img
+                    width: auto
+                    margin-top: 50px
+@media screen and ( max-width: 605px )
+    .marketing-kit
+        .container
+            padding-top: 65px
+            .kit-img
+                max-width: 350px
+                width: 100%
+@media screen and ( max-width: 505px )
+    .marketing-kit
+        .container
+            .contentKit
+                .kit-img
+                   max-width: 350px
+                   width: 100%

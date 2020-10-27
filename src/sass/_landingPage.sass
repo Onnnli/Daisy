@@ -1,0 +1,107 @@
+.LP
+    background-color: #f2f2f2
+    .container
+        padding-top: 60px
+        padding-bottom: 20px
+
+        .titleSection
+            text-align: center
+            color: #868686
+            font-size: 28px
+            font-weight: 500
+            line-height: 26.02px
+            text-transform: uppercase
+            // Text style for "w, hat do"
+            letter-spacing: -0.14px
+            span
+                color: $text-color
+        hr
+            width: 222px
+            height: 1px
+            background-color: #adadad
+            margin-bottom: 67px
+        .LP-content
+            display: flex
+            align-items: center
+            .content-text
+                flex-basis: 50%
+
+                .titleContent 
+                    color: #868686
+                    font-size: 28px
+                    font-weight: 500
+                    line-height: 26px
+                    text-transform: uppercase
+                    letter-spacing: -0.14px
+                    margin-bottom: 27px
+                    position: relative
+                    margin-left: 17px
+                    &::before
+                        left: -17px
+                        top: -7px
+                        content: ""
+                        position: absolute
+                        width: 10px
+                        height: 39px
+                        background-color: #fc635e
+
+                .text
+                    color: #9e9898
+                    font-size: 15px
+                    font-weight: 300
+                    line-height: 24px
+                    letter-spacing: 0.23px
+                    margin-bottom: 39px
+                a.details
+                    text-decoration: none
+                    width: 167px
+                    height: 44px
+                    background-color: #fc635e
+                    width: 102px
+                    color: #f2f2f2
+                    font-size: 20px
+                    font-weight: 300
+                    line-height: 26px
+                    letter-spacing: -0.1px
+                    padding: 14px 32px
+                    border-radius: 12px;
+            .content-img
+                position: relative
+                display: flex
+                flex-basis: 50%
+                .thunderbolt
+                    display: block
+                    margin: 0 auto
+                .ipad
+                    position: absolute
+                    right: 5%
+                    top: 45%
+                .macbook
+                    position: absolute
+                    top: 50%
+        a.down 
+            margin-top: 63px
+            background-color: transparent
+            i 
+                color: $text-color
+@media screen and ( max-width: 785px )
+    .LP
+        .container
+            .LP-content
+                flex-wrap: wrap
+                .content-text
+                    flex-basis: 100%
+                    a.details
+                        padding: 9px 32px
+                        display: block
+                        width: 175px
+                        margin: 0 auto
+                .content-img
+                    margin-top: 50px
+                    flex-basis: 100%
+@media screen and ( max-width: 385px )
+    .LP
+        .container
+            .LP-content
+                .content-img
+                    display: none

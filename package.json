@@ -1,0 +1,29 @@
+{
+  "name": "gridbox",
+  "version": "1.0.0",
+  "description": "gulp of course",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Onnnli/Daisy.git"
+  },
+  "author": "elizaveta",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Onnnli/Daisy.git"
+  },
+  "homepage": "https://github.com/Onnnli/Daisy#readme",
+  "devDependencies": {
+    "bootstrap": "^4.5.2",
+    "browser-sync": "^2.26.12",
+    "gulp-pug": "^4.0.1",
+    "gulp-sass": "^4.1.0",
+    "jquery": "^3.5.1"
+  },
+  "dependencies": {
+    "gulp": "^4.0.2"
+  }
+}

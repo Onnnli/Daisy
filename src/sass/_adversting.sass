@@ -1,0 +1,62 @@
+.adversting
+    .container
+        padding-top: 134px
+        padding-bottom: 20px
+        .contentAdversting
+            display: flex
+            align-items: center
+            .adversting-text
+                flex-basis: 50%
+                text-align: end;
+                .titleContent
+                    margin-right: 17px
+                    &::after
+                        top: -7px
+                        content: ""
+                        position: absolute
+                        width: 10px
+                        height: 39px
+                        background-color: #fc635e
+        a.down 
+            margin-top: 63px
+            background-color: transparent
+            i 
+                color: $text-color
+@media screen and ( max-width: 963px )
+    .adversting
+        .container
+            .contentAdversting
+                .adversting-img
+                    width: 50%
+@media screen and ( max-width: 785px )
+    .adversting
+        .container
+            .contentAdversting
+                flex-wrap: wrap
+                .adversting-text
+                    flex-basis: 100%
+                    order: 1
+                    a.details
+                        display: block
+                        width: 175px
+                        margin: 0 auto
+                        padding: 9px 32px
+                .adversting-img
+                    order: 2
+                    width: auto
+                    margin-top: 50px
+@media screen and ( max-width: 605px )
+    .adversting
+        .container
+            padding-top: 65px
+            .contentAdversting
+                .adversting-img
+                   max-width: 350px
+                   width: 100%
+@media screen and ( max-width: 505px )
+    .adversting
+        .container
+            .contentAdversting
+                .adversting-img
+                   max-width: 350px
+                   width: 100%

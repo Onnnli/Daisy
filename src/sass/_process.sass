@@ -1,0 +1,436 @@
+
+.process
+    .container
+        padding-top: 51px
+        padding-bottom: 21px
+        display: flex
+        flex-direction: column
+        margin: auto
+        .titleProcess
+            align-self: center
+            font-size: 28px
+            font-weight: 500
+            line-height: 26px
+            text-transform: uppercase
+            color: #868686
+            letter-spacing: -0.14px
+            padding-bottom: 12px
+            border-bottom: 1px solid #adadad
+            margin-bottom: 19px
+            max-width: 206px
+            width: 100%
+            span
+                color: $text-color
+                padding: 0
+        .discribeProcess
+            align-self: center
+            max-width: 510px
+            width: 100%
+            color: #adadad
+            font-size: 20px
+            font-weight: 300
+            line-height: 26.02px
+            letter-spacing: -0.1px
+            padding: 0
+            margin-bottom: 57px
+            text-align: center
+        .stepsProcess
+            position: relative
+            margin-bottom: 22%
+            .hex
+                width: 174px
+                height: 100px
+                background-repeat: no-repeat
+                background-position: 50% 50%
+                position: relative
+                float: left
+                margin: 25px 5px
+                text-align: center
+                zoom: 1
+                
+                .inner
+                    
+                    .hexTitle
+                        font-size: 24px
+                        font-weight: 500
+                        line-height: 16px
+                        text-transform: uppercase
+                        letter-spacing: -0.12px
+                        span
+                            color: $text-color
+                    hr
+                        width: 76px
+                    .hexText
+                        color: #9f9f9f
+                        font-size: 15px
+                        font-weight: 300
+                        line-height: 17px
+                        letter-spacing: -0.08px
+                .step-one
+                    position: absolute
+                    top: -18%;
+                    left: -10%;
+
+
+
+            /* HEXAGON STARTS HERE 
+
+            
+            .corner-1, .corner-2
+                position: absolute
+                top: 0
+                left: 0
+                width: 103%
+                height: 100%
+                background: inherit
+                z-index: -2
+                overflow: hidden
+                -webkit-backface-visibility: hidden
+                -moz-backface-visibility: hidden
+                -ms-backface-visibility: hidden
+                -o-backface-visibility: hidden
+                backface-visibility: hidden
+
+            .corner-1
+                z-index: -1
+                -webkit-transform: rotate(60deg)
+                -moz-transform: rotate(60deg)
+                -ms-transform: rotate(60deg)
+                -o-transform: rotate(60deg)
+                transform: rotate(60deg)
+                
+
+            .corner-2
+                -webkit-transform: rotate(-60deg)
+                -moz-transform: rotate(-60deg)
+                -ms-transform: rotate(-60deg)
+                -o-transform: rotate(-60deg)
+                transform: rotate(-60deg)
+               
+
+
+            .corner-1:before, .corner-2:before
+                width: 200px
+                height: 200px
+                content: ''
+                position: absolute
+                background: inherit
+                top: 0
+                left: 0
+                z-index: 1
+                background: inherit
+                background-repeat: no-repeat
+                -webkit-backface-visibility: hidden
+                -moz-backface-visibility: hidden
+                -ms-backface-visibility: hidden
+                -o-backface-visibility: hidden
+                backface-visibility: hidden
+
+            .corner-1:before
+                -webkit-transform: rotate(-60deg) translate(-87px, 0px)
+                -moz-transform: rotate(-60deg) translate(-87px, 0px)
+                -ms-transform: rotate(-60deg) translate(-87px, 0px)
+                -o-transform: rotate(-60deg) translate(-87px, 0px)
+                transform: rotate(-60deg) translate(-87px, 0px)
+                -webkit-transform-origin: 0 0
+                -moz-transform-origin: 0 0
+                -ms-transform-origin: 0 0
+                -o-transform-origin: 0 0
+                transform-origin: 0 0
+
+            .corner-2:before
+                -webkit-transform: rotate(60deg) translate(-48px, -11px)
+                -moz-transform: rotate(60deg) translate(-48px, -11px)
+                -ms-transform: rotate(60deg) translate(-48px, -11px)
+                -o-transform: rotate(60deg) translate(-48px, -11px)
+                transform: rotate(60deg) translate(-48px, -11px)
+                bottom: 0
+
+            /* HEX-1
+            .hex.hex-1
+                border: 5px solid $text-color
+                border-top: none
+                border-left: 1px solid grey
+                border-bottom: none
+                position: absolute
+                top: 40.5%
+                left: 15.9%
+                .corner-1
+                    border: 5px solid $text-color
+                    border-bottom: none
+                    border-top: none
+                    border-right: 1px solid grey
+                .corner-2
+                    border: 5px solid $text-color
+                    border-top: none
+                    border-bottom: none
+                    border-left: 1px solid grey
+
+            /* hex-2
+            .hex.hex-2
+                border-right: 1px solid grey
+                position: absolute
+                top: 56%
+                left: 39%
+                .inner
+                    border-left: 5px solid $text-color
+                .corner-1
+                    border-left: 5px solid $text-color
+                    border-right: 1px solid grey
+                    width: 100%
+                .corner-2
+                    border-right: 1px solid grey
+                    border-left: 1px solid grey
+                    width: 100%
+            /*HEX-3
+            .hex.hex-3
+                position: absolute
+                border-left: 5px solid $text-color
+                border-right: 5px solid $text-color
+                top: 14%;
+                left: 46.3%;
+                .corner-1
+                    border-left: 5px solid $text-color
+                    border-right: 1px solid grey
+                    height: 96%
+                .corner-2
+                    border-right: 5px solid $text-color
+                    border-left: 1px solid grey
+                    height: 96%
+            .hex.hex-4
+                border-right: 5px solid $text-color
+                border-left: 1px solid grey
+                width: 262px
+                height: 150px
+                margin-left: 62%;
+                margin-top: 15%;
+                .corner-1
+                    border-left: 5px solid $text-color
+                    border-right: 5px solid $text-color
+                    width: 102%;
+                .corner-2
+                    border-right: 5px solid $text-color
+                    border-left: 1px solid grey
+                    width: 102%;
+                .step-one
+                    top: -12%
+                    left: -7%
+                .step-two
+                    position: absolute
+                    top: 135%
+                    left: 44%
+            .step-img  
+                position: absolute;
+                top: 76%
+                left: 20%
+        .down
+            background-color: transparent
+            i 
+                color: $text-color
+
+@media screen and ( max-width: 1140px)
+    .process
+        .container
+            .stepsProcess
+                .hex
+                .hex.hex-4
+                    margin-left: 64%;
+                    margin-top: 19%;
+                .hex.hex-2
+                    top: 54.7%
+                    left: 37.5%
+                .step-img
+                    top: 75%
+                    left: 15%
+                .hex.hex-1
+                        left: 9.9%
+@media screen and ( max-width: 963px)
+    .process
+        .container
+           
+            .stepsProcess
+                .hex
+                .hex.hex-4
+                    margin-left: 65%
+                    margin-top: 23%
+                .hex.hex-3
+                    top: 16%
+                    left: 43.3%
+                .hex.hex-2
+                    top: 56.7%
+                    left: 32.5%
+                .step-img
+                    width: 200px
+                    top: 80%
+                    left: 11.5%
+                .hex.hex-1
+                    left: 1.5%
+                    top: 45.3%
+
+@media screen and ( max-width: 785px )
+     .process
+        .container
+           
+            .stepsProcess
+                .hex
+                .hex.hex-4
+                    width: 174px
+                    height: 100px
+                    margin-left: 70%
+                    margin-top: 29%
+                    .step-two 
+                        top: 127%
+                        left: 37%
+                .hex.hex-2
+                    top: 64.35%
+                    left: 29.5%
+                    .inner
+                        border-left: 1px solid grey;
+                .step-img
+                    display: none
+                .hex.hex-1
+                        left: 1.5%
+                        top: 31.3%
+@media screen and ( max-width: 605px )
+    .process
+        .container
+           
+            .stepsProcess
+                display: flex
+                flex-direction: column
+                .hex
+                    
+                .hex.hex-4
+                    left: 50.5%
+                    position: relative
+                    margin: 0
+                    top: 42.9px
+                    border-right: 1px solid grey
+                    border-left: none
+                    .inner
+                        border-left: 5px solid $text-color
+                    .corner-1
+                        border-right: 1px solid  grey
+                        width: 100%
+                    .corner-2
+                        border-right: 1px solid  grey
+                        border-left: 5px solid $text-color
+                        width: 100%
+                .hex.hex-3
+                    position: relative
+                    top: 22px
+                    left: 33%
+                    border-left: 1px solid grey
+                    .corner-1
+                        height: 100%
+                    .corner-2
+                        height: 100%
+                        
+                .hex.hex-2
+                    position: relative
+                    left: 16.3%;
+                    top: 21.7px;
+                    border-right: none
+                    .inner
+                        border-right: 1px solid grey
+                        border-left: 5px solid $text-color
+                    .corner-2
+                        border-right: 5px solid $text-color
+                        border-left: 5px solid $text-color
+                        
+                .hex.hex-1
+                    position: relative
+                    margin: 0 auto
+                    .corner-1
+                        border-right: 5px solid $text-color
+                    .corner-2
+                        border-left: 5px solid $text-color
+
+
+            .down
+                margin-top: 25px
+
+
+@media screen and ( max-width: 505px )
+    .process
+        .container
+           
+            .stepsProcess
+                margin-top: 40px
+                .hex
+                    
+                .hex.hex-4
+                    top: 290px
+                    left: 0
+                    margin: 0 auto
+                    border: none
+                    .inner
+                        border-right: 5px solid $text-color
+                        border-left: 5px solid $text-color
+                    .corner-2
+                        border-right: 5px solid $text-color
+                        border-left: 5px solid $text-color
+                        width: 100%;
+                    .corner-1
+                        border-right: 5px solid $text-color
+                        width: 100%;
+                    .step-one
+                        left: 68px;
+                        top: -67px;
+                    
+                .hex.hex-3
+                    top: 194px
+                    left: 0
+                    margin: 0 auto
+                    border: none
+                    .inner
+                        border-right: 5px solid $text-color
+                        border-left: 5px solid $text-color
+                    .corner-2
+                        border-right: 5px solid $text-color
+                        border-left: 5px solid $text-color
+                        width: 100%;
+                    .corner-1
+                        border-right: 5px solid $text-color
+                        width: 100%;
+                    .step-one
+                        left: 68px;
+                        top: -67px;
+                        
+                .hex.hex-2
+                    top: 95px
+                    left: 0
+                    margin: 0 auto
+                    .inner
+                        border-right: 5px solid $text-color
+                        border-left: 5px solid $text-color
+                    .corner-2
+                        border-right: 5px solid $text-color
+                        border-left: 5px solid $text-color
+                    .corner-1
+                        border-right: 5px solid $text-color
+                    .step-one
+                        left: 68px;
+                        top: -67px;
+                        
+                .hex.hex-1
+                    border: none
+                    left: 0
+                    .inner
+                        border-left: 5px solid $text-color
+                        border-right: 5px solid $text-color
+                    .corner-1
+                        width: 100%;
+                    .corner-2
+                        width: 100%;
+                    .step-one
+                        left: 68px;
+                        top: -67px;
+
+
+            .down
+                margin-top: 295px
+
+
+
+    
