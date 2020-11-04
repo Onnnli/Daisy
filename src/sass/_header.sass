@@ -12,216 +12,186 @@ header
         width: 100%
         height: 100%
         position: absolute
-        .container
-            margin: 0 auto
-            max-width: 1140px
+
+
+
+
+
+.navWrapper
+    padding-top: 31px
+    margin-bottom: 190px
+.navContainer
+    display: flex
+    justify-content: space-between
+    align-items: center
+.nav
+    display: flex
+    justify-content: space-between
+    max-width: 422px
+    li
+        border-bottom: 4px solid transparent
+        a 
+            text-decoration: none
+            color: #ffffff  !important
+            font-size: 16px
+            font-weight: 400
+            line-height: 36px
+            text-transform: uppercase
+            letter-spacing: 0.64px
+        &:hover
+            border-bottom: 4px solid $text-color
+            a 
+                color:  #fc635e !important
+
+
+
+                
+.contentHeader
+    display: flex   
+    flex-direction: column
+
+    h1.titleHeader
+        position: relative
+        text-align: center
+        color: #ffffff
+        font-size: 51px
+        font-weight: 700
+        line-height: 36px
+        text-transform: uppercase
+        margin-bottom: 27px
+        span
+            color: $text-color
+        &::before, &::after
+            content: " "
+            position: absolute
+            width: 107px
+            height: 8px
+            background-color: #ffffff
+            opacity: 0.2    
+            top: 14px
+        &::before  
+            left: 75px
+        &::after
+            right: 75px
+        
+    p.subtitle  
+        text-align: center
+        color: #ffffff
+        font-size: 24px
+        font-weight: 300
+        line-height: 26px
+        letter-spacing: -0.12px
+        margin: 0  
+        margin-bottom: 48px
+
+    .btnBlock
+        display: flex
+        justify-content: center
+        margin-bottom: 200px
+            
+        .buttonHeader
+            margin-left: 40px
+            align-self: center
+            outline: none
+            padding: 20px 0;
+            text-align: center
+            color: $text-color
+            max-width: 205px
             width: 100%
-            padding-top: 31px
-            .navContainer
-                display: flex
-                justify-content: space-between
-                align-items: center
-                margin-bottom: 192px
-                .nav
-                    display: flex
-                    justify-content: space-between
-                    list-style: none
-                    max-width: 422px
-                    width: 100%
-                    li
-                        a 
-                            text-decoration: none
-                            color: #ffffff
-                            font-size: 16px
-                            font-weight: 400
-                            line-height: 36px
-                            text-transform: uppercase
-                            letter-spacing: 0.64px
-                        
-                        &:hover
-                            border-bottom: 4px solid $text-color
-                            a 
-                                color:  #fc635e
-            .contentHeader
-                display: flex   
-                flex-direction: column
-                h1.titleHeader
-                    position: relative
-                    text-align: center
-                    color: #ffffff
-                    font-size: 51px
-                    font-weight: 700
-                    line-height: 36px
-                    text-transform: uppercase
-                    margin-bottom: 27px
-                    span
-                        color: $text-color
-                    &::before, &::after
-                        content: " "
-                        position: absolute
-                        width: 107px
-                        height: 8px
-                        background-color: #ffffff
-                        opacity: 0.2    
-                        top: 14px
-                    &::before  
-                        left: 75px
-                    &::after
-                        right: 75px
-                    
-                p.subtitle  
-                    text-align: center
-                    color: #ffffff
-                    font-size: 24px
-                    font-weight: 300
-                    line-height: 26px
-                    letter-spacing: -0.12px
-                    margin: 0  
-                    margin-bottom: 48px
-                .btnBlock
-                    display: flex
-                    justify-content: center
-                    margin-bottom: 230px
-                        
-                    .buttonHeader
-                        margin-left: 40px
-                        align-self: center
-                        outline: none
-                        padding: 20px 0;
-                        text-align: center
-                        color: $text-color
-                        max-width: 205px
-                        width: 100%
-                        border: 2px solid $text-color
-                        border-radius: 10px
-                        background-color: transparent
-                        font-size: 24px
-                        font-weight: 300
-                        line-height: 26px
-                        letter-spacing: -0.12px
-                        cursor: pointer
-                        margin-right: 9px
-                        &:hover
-                            background-color: #fff
-                        
-                    .block
-                        position: relative
-                        display: flex
-                        .mouse
-                            fill: #fff
-                            align-self: center
-                            opacity: 0.3
-                        .border-mouse
-                            position: absolute
-                            border: 2px dashed rgba(255, 255, 255, 0.3)
-                            width: 40px
-                            height: 300px
-                            border-top-right-radius: 15px
-                            border-left: none
-                            border-bottom: none
-                            top: 33px
-                            left: 49px
+            border: 2px solid $text-color
+            border-radius: 10px
+            background-color: transparent
+            font-size: 24px
+            font-weight: 300
+            line-height: 26px
+            letter-spacing: -0.12px
+            cursor: pointer
+            margin-right: 9px
+            &:hover
+                background-color: #fff
+            
+        .block
+            position: relative
+            display: flex
+
+            .mouse
+                fill: #fff
+                align-self: center
+                opacity: 0.3
+
+            .border-mouse
+                position: absolute
+                border: 2px dashed rgba(255, 255, 255, 0.3)
+                width: 40px
+                height: 300px
+                border-top-right-radius: 15px
+                border-left: none
+                border-bottom: none
+                top: 33px
+                left: 49px
+
+
 @media screen and ( max-width: 1140px )
-    header
-        .bg
+    .contentHeader
+        h1.titleHeader
+            &::before, &::after
+                content: ""
+                width: 50px
+                height: 4px
+                background-color: #ffffff
+                opacity: 0.2    
+                top: 14px
+            &::before  
+                left: 10%
+            &::after
+                right: 10%
 
-            .container
-                max-width: 960px
-                width: 100%
-                .contentHeader
-                    h1.titleHeader
+@media screen and ( max-width: 992px )
+    .navContainer
+        a.logo
+            .logo-img
+                width: 100px
+        .nav
+            margin-left: 30px;
+            .nav-item
+                a
+                    font-size: 14px
 
-                        &::before, &::after
-                            content: ""
-                            width: 50px
-                            height: 4px
-                            background-color: #ffffff
-                            opacity: 0.2    
-                            top: 14px
-                        &::before  
-                            left: 10%
-                        &::after
-                            right: 10%
-@media screen and ( max-width: 963px )
-    header
-        .bg
-
-            .container
-                max-width: 780px
-                width: 100%
-                .contentHeader
-                    h1.titleHeader
-
-                        &::before, &::after
-                            content: ""
-                            display: none
-@media screen and ( max-width: 785px )
-    header
-        height: 850px
-        .bg
-            .container
-                max-width: 600px
-                width: 100%
-                .contentHeader
-                    h1.titleHeader
-                        line-height: 57px
-@media screen and ( max-width: 785px )
-    header
-        height: 770px
-        .bg
-            .container
-                max-width: 500px
-                width: 100%
-                .navContainer
+    .contentHeader
+        h1.titleHeader
+            line-height: 57px
+            font-size: 41px
+            &::before, &::after
+                content: ""
+                display: none
+        p.subtitle
+            font-size: 18px
+        .btnBlock
+            .buttonHeader
+                padding: 14px 0;
                     
-                    a.logo
-                        .logo-img
-                            width: 100px
-                    .nav
-                        margin-left: 30px;
-                        .nav-item
-                            a
-                                font-size: 14px
+@media screen and ( max-width: 768px )
+    .navContainer
+        margin-bottom: 135px
+        .nav
+            margin: 0 auto
+    .contentHeader
+        .btnBlock
+            margin-bottom: 130px
+            .block
+                .border-mouse
+                    height: 225px
+                    top: 28px
 
-                .contentHeader
-                    h1.titleHeader
-                        font-size: 41px
-                    p.subtitle
-                        font-size: 18px
-                    .btnBlock
-                        .buttonHeader
-                            padding: 14px 0;
-                    
-@media screen and ( max-width: 505px )
-    header
-        .bg
-            .container
-                max-width: 380px
-                width: 100%
-                .navContainer
-                    flex-direction: column
-                    margin-bottom: 135px
-                    .nav
-                        margin: 0 auto
-                .contentHeader
-                    .btnBlock
-                        margin-bottom: 163px;
-                        .block
-                            .border-mouse
-                                height: 225px
-                                top: 28px;
-@media screen and ( max-width: 505px )
-    header
-        .bg
-            .container
-                max-width: 300px
-                width: 100%
-                .navContainer
-                    .nav
-                .contentHeader
-                    .btnBlock
-                        .block
-                            .border-mouse
-                                width: 12px
-    
-                        
+
+@media screen and ( max-width: 576px )
+    .border-mouse
+        width: 12px
+    .contentHeader
+        .btnBlock
+            margin-bottom: 100px
+
+@media screen and ( max-width: 372px )
+    .contentHeader
+        .btnBlock
+            margin-bottom: 70px

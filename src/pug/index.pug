@@ -6,26 +6,28 @@ html(lang="en")
         title Daisy - Clients in your business
         link(rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css' integrity='sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z' crossorigin='anonymous')
         link(rel="stylesheet", href="css/main.css")
-        script(src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js')
         script(src='https://kit.fontawesome.com/9bdc228e6a.js' crossorigin='anonymous')
         
     body
         header.header
             .bg
                 .container
-                    .navContainer
-                        a.logo(href="#")
-                            img.logo-img(src="img/logo.png", alt="logo")
-                        nav.nav
-                            li.nav-item
-                                a(href="#") About                   
-                            li.nav-item
-                                a(href="#") Portfolio
-                            li.nav-item
-                                a(href="#") Services
-                            li.nav-item
-                                a(href="#") Contact
-
+                    .navWrapper
+                        nav.navbar.navbar-expand-lg.navbar-light.navContainer
+                            a.navbar-brand(href='#') 
+                                 img.logo-img(src="img/logo.png", alt="logo")
+                            button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarNav' aria-controls='navbarNav' aria-expanded='false' aria-label='Toggle navigation')
+                                span.navbar-toggler-icon
+                            #navbarNav.collapse.navbar-collapse.nav
+                                ul.navbar-nav
+                                    li.nav-item.active
+                                        a.nav-link(href='#') About
+                                    li.nav-item
+                                        a.nav-link(href='#') Portfolio
+                                    li.nav-item
+                                        a.nav-link(href='#') Services
+                                    li.nav-item
+                                        a.nav-link(href='#') Contact
                     .contentHeader
                         h1.titleHeader
                             span Clients 
@@ -298,6 +300,6 @@ html(lang="en")
 
 
 
-        script(src='https://code.jquery.com/jquery-3.5.1.slim.min.js' integrity='sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj' crossorigin='anonymous')
-        script(src='https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js' integrity='sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN' crossorigin='anonymous')
-        script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js' integrity='sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV' crossorigin='anonymous')
+        script(src='https://code.jquery.com/jquery-3.4.1.slim.min.js' integrity='sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n' crossorigin='anonymous')
+        script(src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js' integrity='sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo' crossorigin='anonymous')
+        script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js' integrity='sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6' crossorigin='anonymous')

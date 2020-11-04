@@ -53,33 +53,27 @@ a.details {
 
 @media screen and (max-width: 1140px) {
   .container {
-    max-width: 960px;
-    width: 100%; } }
+    padding: 0 40px; } }
 
 @media screen and (max-width: 963px) {
   .container {
-    max-width: 780px;
-    width: 100%; } }
+    padding: 0 40px; } }
 
 @media screen and (max-width: 785px) {
   .container {
-    max-width: 600px;
-    width: 100%; } }
+    padding: 0 30px; } }
 
 @media screen and (max-width: 605px) {
   .container {
-    max-width: 500px;
-    width: 100%; } }
+    padding: 0 25px; } }
 
 @media screen and (max-width: 505px) {
   .container {
-    max-width: 380px;
-    width: 100%; } }
+    padding: 0 20px; } }
 
 @media screen and (max-width: 385px) {
   .container {
-    max-width: 300px;
-    width: 100%; } }
+    padding: 0 15px; } }
 
 body {
   margin: 0;
@@ -102,178 +96,154 @@ body {
       width: 100%;
       height: 100%;
       position: absolute; }
-      body header .bg .container {
-        margin: 0 auto;
-        max-width: 1140px;
-        width: 100%;
-        padding-top: 31px; }
-        body header .bg .container .navContainer {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          margin-bottom: 192px; }
-          body header .bg .container .navContainer .nav {
-            display: flex;
-            justify-content: space-between;
-            list-style: none;
-            max-width: 422px;
-            width: 100%; }
-            body header .bg .container .navContainer .nav li a {
-              text-decoration: none;
-              color: #ffffff;
-              font-size: 16px;
-              font-weight: 400;
-              line-height: 36px;
-              text-transform: uppercase;
-              letter-spacing: 0.64px; }
-            body header .bg .container .navContainer .nav li:hover {
-              border-bottom: 4px solid #fc635e; }
-              body header .bg .container .navContainer .nav li:hover a {
-                color: #fc635e; }
-        body header .bg .container .contentHeader {
-          display: flex;
-          flex-direction: column; }
-          body header .bg .container .contentHeader h1.titleHeader {
-            position: relative;
-            text-align: center;
-            color: #ffffff;
-            font-size: 51px;
-            font-weight: 700;
-            line-height: 36px;
-            text-transform: uppercase;
-            margin-bottom: 27px; }
-            body header .bg .container .contentHeader h1.titleHeader span {
-              color: #fc635e; }
-            body header .bg .container .contentHeader h1.titleHeader::before, body header .bg .container .contentHeader h1.titleHeader::after {
-              content: " ";
-              position: absolute;
-              width: 107px;
-              height: 8px;
-              background-color: #ffffff;
-              opacity: 0.2;
-              top: 14px; }
-            body header .bg .container .contentHeader h1.titleHeader::before {
-              left: 75px; }
-            body header .bg .container .contentHeader h1.titleHeader::after {
-              right: 75px; }
-          body header .bg .container .contentHeader p.subtitle {
-            text-align: center;
-            color: #ffffff;
-            font-size: 24px;
-            font-weight: 300;
-            line-height: 26px;
-            letter-spacing: -0.12px;
-            margin: 0;
-            margin-bottom: 48px; }
-          body header .bg .container .contentHeader .btnBlock {
-            display: flex;
-            justify-content: center;
-            margin-bottom: 230px; }
-            body header .bg .container .contentHeader .btnBlock .buttonHeader {
-              margin-left: 40px;
-              align-self: center;
-              outline: none;
-              padding: 20px 0;
-              text-align: center;
-              color: #fc635e;
-              max-width: 205px;
-              width: 100%;
-              border: 2px solid #fc635e;
-              border-radius: 10px;
-              background-color: transparent;
-              font-size: 24px;
-              font-weight: 300;
-              line-height: 26px;
-              letter-spacing: -0.12px;
-              cursor: pointer;
-              margin-right: 9px; }
-              body header .bg .container .contentHeader .btnBlock .buttonHeader:hover {
-                background-color: #fff; }
-            body header .bg .container .contentHeader .btnBlock .block {
-              position: relative;
-              display: flex; }
-              body header .bg .container .contentHeader .btnBlock .block .mouse {
-                fill: #fff;
-                align-self: center;
-                opacity: 0.3; }
-              body header .bg .container .contentHeader .btnBlock .block .border-mouse {
-                position: absolute;
-                border: 2px dashed rgba(255, 255, 255, 0.3);
-                width: 40px;
-                height: 300px;
-                border-top-right-radius: 15px;
-                border-left: none;
-                border-bottom: none;
-                top: 33px;
-                left: 49px; }
-  @media screen and (max-width: 1140px) {
-    body header .bg .container {
-      max-width: 960px;
-      width: 100%; }
-      body header .bg .container .contentHeader h1.titleHeader::before, body header .bg .container .contentHeader h1.titleHeader::after {
-        content: "";
-        width: 50px;
-        height: 4px;
+  body .navWrapper {
+    padding-top: 31px;
+    margin-bottom: 190px; }
+  body .navContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  body .nav {
+    display: flex;
+    justify-content: space-between;
+    max-width: 422px; }
+    body .nav li {
+      border-bottom: 4px solid transparent; }
+      body .nav li a {
+        text-decoration: none;
+        color: #ffffff  !important;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 36px;
+        text-transform: uppercase;
+        letter-spacing: 0.64px; }
+      body .nav li:hover {
+        border-bottom: 4px solid #fc635e; }
+        body .nav li:hover a {
+          color: #fc635e !important; }
+  body .contentHeader {
+    display: flex;
+    flex-direction: column; }
+    body .contentHeader h1.titleHeader {
+      position: relative;
+      text-align: center;
+      color: #ffffff;
+      font-size: 51px;
+      font-weight: 700;
+      line-height: 36px;
+      text-transform: uppercase;
+      margin-bottom: 27px; }
+      body .contentHeader h1.titleHeader span {
+        color: #fc635e; }
+      body .contentHeader h1.titleHeader::before, body .contentHeader h1.titleHeader::after {
+        content: " ";
+        position: absolute;
+        width: 107px;
+        height: 8px;
         background-color: #ffffff;
         opacity: 0.2;
         top: 14px; }
-      body header .bg .container .contentHeader h1.titleHeader::before {
-        left: 10%; }
-      body header .bg .container .contentHeader h1.titleHeader::after {
-        right: 10%; } }
-  @media screen and (max-width: 963px) {
-    body header .bg .container {
-      max-width: 780px;
-      width: 100%; }
-      body header .bg .container .contentHeader h1.titleHeader::before, body header .bg .container .contentHeader h1.titleHeader::after {
+      body .contentHeader h1.titleHeader::before {
+        left: 75px; }
+      body .contentHeader h1.titleHeader::after {
+        right: 75px; }
+    body .contentHeader p.subtitle {
+      text-align: center;
+      color: #ffffff;
+      font-size: 24px;
+      font-weight: 300;
+      line-height: 26px;
+      letter-spacing: -0.12px;
+      margin: 0;
+      margin-bottom: 48px; }
+    body .contentHeader .btnBlock {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 200px; }
+      body .contentHeader .btnBlock .buttonHeader {
+        margin-left: 40px;
+        align-self: center;
+        outline: none;
+        padding: 20px 0;
+        text-align: center;
+        color: #fc635e;
+        max-width: 205px;
+        width: 100%;
+        border: 2px solid #fc635e;
+        border-radius: 10px;
+        background-color: transparent;
+        font-size: 24px;
+        font-weight: 300;
+        line-height: 26px;
+        letter-spacing: -0.12px;
+        cursor: pointer;
+        margin-right: 9px; }
+        body .contentHeader .btnBlock .buttonHeader:hover {
+          background-color: #fff; }
+      body .contentHeader .btnBlock .block {
+        position: relative;
+        display: flex; }
+        body .contentHeader .btnBlock .block .mouse {
+          fill: #fff;
+          align-self: center;
+          opacity: 0.3; }
+        body .contentHeader .btnBlock .block .border-mouse {
+          position: absolute;
+          border: 2px dashed rgba(255, 255, 255, 0.3);
+          width: 40px;
+          height: 300px;
+          border-top-right-radius: 15px;
+          border-left: none;
+          border-bottom: none;
+          top: 33px;
+          left: 49px; }
+  @media screen and (max-width: 1140px) {
+    body .contentHeader h1.titleHeader::before, body .contentHeader h1.titleHeader::after {
+      content: "";
+      width: 50px;
+      height: 4px;
+      background-color: #ffffff;
+      opacity: 0.2;
+      top: 14px; }
+    body .contentHeader h1.titleHeader::before {
+      left: 10%; }
+    body .contentHeader h1.titleHeader::after {
+      right: 10%; } }
+  @media screen and (max-width: 992px) {
+    body .navContainer a.logo .logo-img {
+      width: 100px; }
+    body .navContainer .nav {
+      margin-left: 30px; }
+      body .navContainer .nav .nav-item a {
+        font-size: 14px; }
+    body .contentHeader h1.titleHeader {
+      line-height: 57px;
+      font-size: 41px; }
+      body .contentHeader h1.titleHeader::before, body .contentHeader h1.titleHeader::after {
         content: "";
-        display: none; } }
-  @media screen and (max-width: 785px) {
-    body header {
-      height: 850px; }
-      body header .bg .container {
-        max-width: 600px;
-        width: 100%; }
-        body header .bg .container .contentHeader h1.titleHeader {
-          line-height: 57px; } }
-  @media screen and (max-width: 785px) {
-    body header {
-      height: 770px; }
-      body header .bg .container {
-        max-width: 500px;
-        width: 100%; }
-        body header .bg .container .navContainer a.logo .logo-img {
-          width: 100px; }
-        body header .bg .container .navContainer .nav {
-          margin-left: 30px; }
-          body header .bg .container .navContainer .nav .nav-item a {
-            font-size: 14px; }
-        body header .bg .container .contentHeader h1.titleHeader {
-          font-size: 41px; }
-        body header .bg .container .contentHeader p.subtitle {
-          font-size: 18px; }
-        body header .bg .container .contentHeader .btnBlock .buttonHeader {
-          padding: 14px 0; } }
-  @media screen and (max-width: 505px) {
-    body header .bg .container {
-      max-width: 380px;
-      width: 100%; }
-      body header .bg .container .navContainer {
-        flex-direction: column;
-        margin-bottom: 135px; }
-        body header .bg .container .navContainer .nav {
-          margin: 0 auto; }
-      body header .bg .container .contentHeader .btnBlock {
-        margin-bottom: 163px; }
-        body header .bg .container .contentHeader .btnBlock .block .border-mouse {
-          height: 225px;
-          top: 28px; } }
-  @media screen and (max-width: 505px) {
-    body header .bg .container {
-      max-width: 300px;
-      width: 100%; }
-      body header .bg .container .contentHeader .btnBlock .block .border-mouse {
-        width: 12px; } }
+        display: none; }
+    body .contentHeader p.subtitle {
+      font-size: 18px; }
+    body .contentHeader .btnBlock .buttonHeader {
+      padding: 14px 0; } }
+  @media screen and (max-width: 768px) {
+    body .navContainer {
+      margin-bottom: 135px; }
+      body .navContainer .nav {
+        margin: 0 auto; }
+    body .contentHeader .btnBlock {
+      margin-bottom: 130px; }
+      body .contentHeader .btnBlock .block .border-mouse {
+        height: 225px;
+        top: 28px; } }
+  @media screen and (max-width: 576px) {
+    body .border-mouse {
+      width: 12px; }
+    body .contentHeader .btnBlock {
+      margin-bottom: 100px; } }
+  @media screen and (max-width: 372px) {
+    body .contentHeader .btnBlock {
+      margin-bottom: 70px; } }
   body .down {
     text-decoration: none;
     height: 28px;
