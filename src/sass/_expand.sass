@@ -1,67 +1,60 @@
-@import down
 .expand
     background-image: url(../img/expand-bg.png)
     background-repeat: no-repeat
     background-size: cover
     background-attachment: fixed
-
-    
+  
     .bg
+        padding-top: 91px
+        padding-bottom: 20px
         background-color: rgba(24, 24, 24, 0.7)
         width: 100%
         height: 100%
-        .container
-            padding-top: 91px
-            padding-bottom: 20px
-            .expandText
-                display: flex
-                flex-direction: column
-                align-items: center
-                max-width: 940px
-                margin: auto
-                width: 100%
-                height: 384px
-                justify-content: space-evenly
-                border: 8px solid rgba(255, 255, 255, 0.1)
-                margin-bottom: 53px
+.expandText
+    display: flex
+    flex-direction: column
+    align-items: center
+    max-width: 940px
+    margin: 0 auto
+    width: 100%
+    min-height: 384px
+    justify-content: space-evenly
+    border: 8px solid rgba(255, 255, 255, 0.1)
+    margin-bottom: 53px
 
-                .titleExpand        
-                    color: #ffffff
-                    font-size: 51px
-                    font-weight: 700
-                    line-height: 17.95px
-                    text-transform: uppercase
-                    letter-spacing: -0.26px
-                    span
-                        color: $text-color
-                .buttonExpand
-                    outline: none
-                    padding: 20px 0;
-                    text-align: center
-                    color: $text-color
-                    max-width: 205px
-                    width: 100%
-                    border: 2px solid $text-color
-                    border-radius: 10px
-                    background-color: transparent
-                    font-size: 24px
-                    font-weight: 300
-                    line-height: 26px
-                    letter-spacing: -0.12px
-                    cursor: pointer
-                    &:hover
-                        background-color: #fff
-@media screen and ( max-width: 505px )
-    .expand
-        .bg
-            .container
-                .expandText
-                    .titleExpand
-                        font-size: 41px
-                        line-height: 50px
-                        text-align: center
-                    .buttonExpand
-                        padding: 10px 0
+    .titleExpand        
+        text-align: center
+        color: #ffffff
+        font-size: 51px
+        font-weight: 700
+        text-transform: uppercase
+        span
+            color: $text-color
+
+    .buttonExpand
+        outline: none
+        padding: 20px 0
+        text-align: center
+        color: $text-color
+        max-width: 205px
+        border: 2px solid $text-color
+        border-radius: 10px
+        background-color: transparent
+        font-size: 24px
+        font-weight: 300
+        line-height: 26px
+        cursor: pointer
+        &:hover
+            background-color: #fff
+            
+@media screen and ( max-width: 576px )
+    .expandText
+        .titleExpand
+            font-size: 41px
+            line-height: 50px
+            text-align: center
+        .buttonExpand
+            padding: 10px 20px
     
 
     

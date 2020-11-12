@@ -1,102 +1,97 @@
-@import down
 .receive
-    .container
-        padding-top: 67px
+    padding-top: 67px
+    padding-bottom: 15px
+    
+.titleSection
+    padding-bottom: 12px
+    font-size: 28px
+    margin: 0 auto
+    max-width: fit-content
+    text-align: center
+    font-weight: 500
+    line-height: 26px
+    text-transform: uppercase
+    color: #868686
+    letter-spacing: -0.14px
+    margin-bottom: 19px
+    border-bottom: 1px solid #adadad
+    span
+        color: $text-color
+        
+.subtitleSection
+    margin: 0 auto
+    text-align: center
+    width: 505px
+    color: #adadad
+    font-size: 20px
+    font-weight: 300
+    line-height: 26px
+    letter-spacing: -0.1px
+    margin-bottom: 81px
+        
+.receives
+    display: flex
+    flex-wrap: wrap
+    margin-bottom: 50px
+
+    .receives-item
+        margin: 0 23px 0 23px
         display: flex
         flex-direction: column
         align-items: center
-        padding-bottom: 15px
-        .titleSection
-            position: relative
-            font-size: 28px
-            font-weight: 500
-            line-height: 26px
-            text-transform: uppercase
-            color: #868686
-            letter-spacing: -0.14px
-            margin-bottom: 32px
-            span
-                color: $text-color
-            &::after
-                content: ""
-                position: absolute
-                width: 337px
-                height: 1px
-                background-color: #adadad
-                top: 33px
-                left: 4px
-
-        .subtitleSection
-            text-align: center
-            width: 505px
-            color: #adadad
-            font-size: 20px
-            font-weight: 300
-            line-height: 26px
-            letter-spacing: -0.1px
-            margin-bottom: 81px
-        
-        .receives
+        background-image: url(../img/hex-fill.svg)
+        background-repeat: no-repeat
+        background-position: top center            
+            
+        .inner-image
             display: flex
-            flex-wrap: wrap
-            margin-bottom: 50px
-            .receives-item
-                margin: 0 23px 0 23px
-                display: flex
-                flex-direction: column
-                align-items: center
-                background-image: url(../img/hex-fill.svg)
-                background-repeat: no-repeat
-                background-position: top center            
-                    
-                .inner-image
-                    display: flex
-                    justify-content: center
-                    background-image: url(../img/hex-bg.svg)
-                    width: 100%
-                    height: 110px
-                    background-repeat: no-repeat
-                    background-position: top center
-                    background-position-y: 6px
-                    .img-hex
-                        align-self: center
-                        fill: #fff
-                        opacity: 1
-                .icon-receives
-                    position: absolute
-                .itemTitle
-                    color: #868686
-                    font-size: 20px
-                    font-weight: 500
-                    line-height: 20px
-                    text-transform: uppercase
-                    letter-spacing: -0.1px
-                    position: relative
-                    margin-top: 27px
-                    margin-bottom: 22px
-                    border-bottom: 1px solid #adadad
-                    padding: 11px
-                .discribe
-                    width: 202px
-                    color: #adadad
-                    font-size: 15px
-                    font-weight: 300
-                    line-height: 18px
-                    letter-spacing: -0.07px
-                    text-align: center
-                &:hover .inner-image
-                    background-image: url(../img/hover-bg-hex.svg)
-                    background-repeat: no-repeat
-                    background-position: top center
-                    background-position-y: 6px
-                &:hover .img-hex
-                    fill: $text-color
-                    
+            justify-content: center
+            background-image: url(../img/hex-bg.svg)
+            width: 100%
+            height: 110px
+            background-repeat: no-repeat
+            background-position: top center
+            background-position-y: 6px
+            .img-hex
+                align-self: center
+                fill: #fff
+                opacity: 1
+        .icon-receives
+            position: absolute
+        .itemTitle
+            color: #868686
+            font-size: 20px
+            font-weight: 500
+            line-height: 20px
+            text-transform: uppercase
+            letter-spacing: -0.1px
+            position: relative
+            margin-top: 27px
+            margin-bottom: 22px
+            border-bottom: 1px solid #adadad
+            padding: 11px
+        .discribe
+            width: 202px
+            color: #adadad
+            font-size: 15px
+            font-weight: 300
+            line-height: 18px
+            letter-spacing: -0.07px
+            text-align: center
+        &:hover .inner-image
+            background-image: url(../img/hover-bg-hex.svg)
+            background-repeat: no-repeat
+            background-position: top center
+            background-position-y: 6px
+        &:hover .img-hex
+            fill: $text-color
+            
 
-        .down
-            background-color: transparent
-            .fas.fa-arrow-down
-                color: $text-color
+.down
+    @include down
+    background-color: transparent
+    .fas.fa-arrow-down
+        color: $text-color
 
 @media screen and ( max-width: 1140px )
     .receive
@@ -121,9 +116,7 @@
     .receive
         .container
             .titleSection
-                font-size: 24px
-                &::after
-                    width: 240px
+                font-size: 20px
             .subtitleSection
                 width: 280px
                 font-size: 16px
